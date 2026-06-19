@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Interactive Quiz</title>
+    <!-- Importing a modern, clean font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Header -->
+        <div class="quiz-header">
+            <h1>Brainiac Quiz</h1>
+            <div id="progress-text">Question 1 of 8</div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen">
+            <h2 id="question-text">Question text will load here...</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Dynamic buttons go here -->
+            </div>
+            <button id="next-btn" class="control-btn hidden">Next Question →</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="score-screen" class="hidden">
+            <div class="trophy-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p class="final-score">You scored <span id="score">0</span> out of <span id="total">0</span></p>
+            <button id="restart-btn" class="control-btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
